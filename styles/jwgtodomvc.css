@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: lightgrey;
+}
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	background-color: lightgrey;
+}
+#header {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	background-color: lightgrey;
+}
+#header h1 {
+	text-align: center;
+	color: grey;
+	font-size: 4em;
+}
+#main {
+	height: 80%;
+	overflow: auto;
+	padding: 10px;
+	padding-left: 0px;
+	text-align: center;
+	border-top-width: 20px;
+	border-top-color: #61380B;
+	border-style:solid;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-radius: 3px;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F2F2F2;
+	box-shadow: 5px 5px 5px 5px #BDBDBD;
+}
+.todoItems li {
+	text-decoration: none;
+}
+.todolist {
+	text-align: center;
+	color: grey;
+}
+.items {
+	background-color: white;
+}
+#listInput {
+	width: 100%;
+	overflow: auto;
+	padding: 10px;
+}
+#pulldownHandle {
+	width: 10%;
+	text-align: center;
+	border: 1px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+}
+#inputField {
+	width: 80%;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+#checkbox1 {
+	width: 10%;
+	text-align: center;
+	border: 1px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+}
+#item1 {
+	width: 80%;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+}
+#checkbox2 {
+	width: 10%;
+	text-align: center;
+	border: 1px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+}
+#item2 {
+	width: 80%;
+	display: inline-block;
+	border-width: 1px;
+	border-style: dotted;
+}

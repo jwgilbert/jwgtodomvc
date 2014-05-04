@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>JWG TodoMVC</title> 
+    <link href="styles/jwgtodomvc.css" rel="stylesheet" type="text/css"> 
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/navpanel.js'></script>
+  </head>
+  <body>
+  	<div class="wrapper" id="wrapper">
+  		<header id="header">
+  			<h1>todos</h1>
+  		</header>
+  		<div id="main">
+  			<ul class="todoItems">
+  				<li class="items" id="listInput">
+  					<div id="pulldownHandle">
+  						pd
+  					</div>
+  					<div id="inputField">
+  						<form>
+  						  <input type="text" placeholder="What needs to be done?" autofocus>
+  						</form>
+  					</div>
+  				</li>
+  				<li  class="items" id="listItem1">
+  					<div id="checkbox1">
+  						cb1
+  					</div>
+  					<div id="item1">
+  						item1
+  					</div>
+  				</li>
+  				<li  class="items" id="listItem2">
+  					<div id="checkbox2">
+  						cb2
+  					</div>
+  					<div id="item2">
+  						item2
+  					</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  		
+  		<footer class="footer">
+  			<span id="todo-count"></span>
+				<ul id="filters">
+					<li>
+						<a href="#/" class="selected">All</a>
+					</li>
+					<li>
+						<a href="#/active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<button id="clear-completed">Clear completed</button>
+  		
+  		</footer>
+  </body>
