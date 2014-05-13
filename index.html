@@ -1,62 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-framework="javascript">
 	<head>
-    <title>JWG TodoMVC</title> 
-    <link href="styles/jwgtodomvc.css" rel="stylesheet" type="text/css"> 
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
-    <script type='text/javascript' src='scripts/navpanel.js'></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>JWG TodoMVC</title>
+    <link href="styles/jwgtodomvc.css" rel="stylesheet"> 
   </head>
   <body>
-  	<div class="wrapper" id="wrapper">
-  		<header id="header">
-  			<h1>todos</h1>
-  		</header>
-  		<div id="main">
-  			<ul class="todoItems">
-  				<li class="items" id="listInput">
-  					<div id="pulldownHandle">
-  						pd
-  					</div>
-  					<div id="inputField">
-  						<form>
-  						  <input type="text" placeholder="What needs to be done?" autofocus>
-  						</form>
-  					</div>
-  				</li>
-  				<li  class="items" id="listItem1">
-  					<div id="checkbox1">
-  						cb1
-  					</div>
-  					<div id="item1">
-  						item1
-  					</div>
-  				</li>
-  				<li  class="items" id="listItem2">
-  					<div id="checkbox2">
-  						cb2
-  					</div>
-  					<div id="item2">
-  						item2
-  					</div>
-  				</li>
-  			</ul>
-  		</div>
-  	</div>
-  		
-  		<footer class="footer">
-  			<span id="todo-count"></span>
-				<ul id="filters">
-					<li>
-						<a href="#/" class="selected">All</a>
-					</li>
-					<li>
-						<a href="#/active">Active</a>
-					</li>
-					<li>
-						<a href="#/completed">Completed</a>
-					</li>
-				</ul>
-				<button id="clear-completed">Clear completed</button>
-  		
-  		</footer>
+  <section id="wrapper">
+  	<header id="header">
+  		<h1>todos</h1>
+      <input id="inputBox" type="text" placeholder="What needs to be done?" autofocus="">
+  	</header>
+  	<section id="main" style="display: block;">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all as complete</label>
+  		<ul id="todoItems">
+  			<li data-id="1399216626359" class="">
+          <div class="view">
+            <input class="toggle" type="checkbox">
+            <label>Include jQuery on the page</label>
+  				  <button class="destroy"></button>
+          </div>
+  			</li>
+  			<li data-id="" class="">
+          <div class="view">
+            <input class="toggle" type="checkbox">
+            <label>???</label>
+  				  <button class="destroy"></button>	
+  				</div>
+  			</li>
+  			<li data-id="" class="">
+          <div class="view">
+            <input class="toggle" type="checkbox">
+            <label>Stuff</label>
+  				  <button class="destroy"></button>
+  				</div>
+  			</li>
+  		</ul>
+    </section>
+    <footer id="footer" style="display: block;">
+  		<span id="todo-count"><strong>3</strong>items left</span>
+		  <ul id="filters">
+				<li>
+					<a href="#" class="selected">All</a>
+				</li>
+			  <li>
+				 <a href="#">Active</a>
+			  </li>
+				<li>						
+				 <a href="#">Completed</a>
+			  </li>
+		  </ul>
+			<button id="clear-completed" style="display: none;"></button>
+  	</footer>	
+  </section>
+    <footer id="info">
+      <p>Double-clck to edit a todo</p>
+    </footer>
   </body>
+</html>
